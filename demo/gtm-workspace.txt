@@ -1,0 +1,19 @@
+MEASURECAMP MADRID 2026 – FICTIONAL GTM SANDBOX
+
+Container: Demo sandbox
+Workspace: MeasureCamp - Safe agent demo
+
+Resources:
+  + Variable
+    Demo - DLV - ecommerce.items.0.ctaposition
+
+  + Trigger
+    Demo - select_item
+
+  + Tag
+    Demo - CTA position
+
+Validation:
+  quick-preview: PASSED
+  existing resources modified: 0
+  published: NO

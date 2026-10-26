@@ -1,0 +1,181 @@
+{
+  "nodes": [
+    {
+      "id": "a100000000000001",
+      "type": "text",
+      "x": 0,
+      "y": -420,
+      "width": 1500,
+      "height": 180,
+      "text": "# Mi sistema diario de IA\n\nUna capa compartida de **agentes, skills, herramientas y memoria**, con aprobación humana para las acciones sensibles."
+    },
+    {
+      "id": "a100000000000002",
+      "type": "group",
+      "x": 0,
+      "y": -160,
+      "width": 1500,
+      "height": 440,
+      "label": "Un trabajo recorre especialistas diferentes"
+    },
+    {
+      "id": "a100000000000003",
+      "type": "text",
+      "x": 60,
+      "y": -70,
+      "width": 300,
+      "height": 240,
+      "color": "5",
+      "text": "## Tracking Ticket Triager\n\n**Responsabilidad:** convertir una petición ambigua en criterios verificables.\n\n**Límite:** no implementa."
+    },
+    {
+      "id": "a100000000000004",
+      "type": "text",
+      "x": 465,
+      "y": -70,
+      "width": 300,
+      "height": 240,
+      "color": "6",
+      "text": "## GTM Admin\n\n**Responsabilidad:** inspeccionar e implementar dentro de GTM.\n\n**Límite:** se detiene antes de publicar."
+    },
+    {
+      "id": "a100000000000005",
+      "type": "text",
+      "x": 870,
+      "y": -70,
+      "width": 300,
+      "height": 240,
+      "color": "2",
+      "text": "## Asistente principal\n\n**Responsabilidad:** mantener el contexto, razonar sobre nueva evidencia y proponer una respuesta.\n\n**Límite:** no habla en nombre del humano."
+    },
+    {
+      "id": "a100000000000006",
+      "type": "text",
+      "x": 1240,
+      "y": -70,
+      "width": 200,
+      "height": 240,
+      "color": "3",
+      "text": "## Humano\n\nRevisa.\n\nValida.\n\nPublica.\n\nResponde."
+    },
+    {
+      "id": "a100000000000007",
+      "type": "group",
+      "x": 0,
+      "y": 380,
+      "width": 1500,
+      "height": 450,
+      "label": "Las cuatro capas"
+    },
+    {
+      "id": "a100000000000008",
+      "type": "text",
+      "x": 60,
+      "y": 470,
+      "width": 300,
+      "height": 250,
+      "color": "6",
+      "text": "# Agentes\n\n**Quién** es responsable de cada parte.\n\n- Triage\n- GTM Admin\n- Iris\n- Builder\n- Google Analyst"
+    },
+    {
+      "id": "a100000000000009",
+      "type": "text",
+      "x": 420,
+      "y": 470,
+      "width": 300,
+      "height": 250,
+      "color": "5",
+      "text": "# Skills\n\n**Cómo** sabe hacer el trabajo.\n\n- Procedimientos\n- Convenciones\n- Reglas de seguridad\n- Errores conocidos"
+    },
+    {
+      "id": "a10000000000000a",
+      "type": "text",
+      "x": 780,
+      "y": 470,
+      "width": 300,
+      "height": 250,
+      "color": "4",
+      "text": "# Herramientas\n\n**Dónde** puede actuar.\n\n- Jira\n- GTM\n- GA4\n- Terminal\n- Navegador"
+    },
+    {
+      "id": "a10000000000000b",
+      "type": "text",
+      "x": 1140,
+      "y": 470,
+      "width": 300,
+      "height": 250,
+      "color": "2",
+      "text": "# Memoria\n\n**Qué** conserva entre sesiones.\n\nDecisiones y hallazgos reutilizables, siempre contrastados con la fuente de verdad."
+    },
+    {
+      "id": "a10000000000000c",
+      "type": "text",
+      "x": 310,
+      "y": 930,
+      "width": 880,
+      "height": 180,
+      "color": "3",
+      "text": "# Principio central\n\n## Automatiza el trabajo. No delegues la responsabilidad."
+    }
+  ],
+  "edges": [
+    {
+      "id": "e100000000000001",
+      "fromNode": "a100000000000003",
+      "fromSide": "right",
+      "toNode": "a100000000000004",
+      "toSide": "left",
+      "label": "contrato de aceptación"
+    },
+    {
+      "id": "e100000000000002",
+      "fromNode": "a100000000000004",
+      "fromSide": "right",
+      "toNode": "a100000000000006",
+      "toSide": "left",
+      "label": "listo para revisión",
+      "color": "3"
+    },
+    {
+      "id": "e100000000000003",
+      "fromNode": "a100000000000006",
+      "fromSide": "left",
+      "toNode": "a100000000000005",
+      "toSide": "right",
+      "fromEnd": "arrow",
+      "label": "nueva evidencia"
+    },
+    {
+      "id": "e100000000000004",
+      "fromNode": "a100000000000008",
+      "fromSide": "bottom",
+      "toNode": "a10000000000000c",
+      "toSide": "top",
+      "color": "6"
+    },
+    {
+      "id": "e100000000000005",
+      "fromNode": "a100000000000009",
+      "fromSide": "bottom",
+      "toNode": "a10000000000000c",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "e100000000000006",
+      "fromNode": "a10000000000000a",
+      "fromSide": "bottom",
+      "toNode": "a10000000000000c",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "e100000000000007",
+      "fromNode": "a10000000000000b",
+      "fromSide": "bottom",
+      "toNode": "a10000000000000c",
+      "toSide": "top",
+      "color": "2"
+    }
+  ]
+}
